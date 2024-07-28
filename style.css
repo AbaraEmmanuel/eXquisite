@@ -1,43 +1,5 @@
 /* Existing styles... */
 
-.welcome {
-    padding: 2em;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-}
-
-.welcome h2 {
-    margin-top: 0;
-}
-
-.welcome p {
-    margin: 20px 0;
-}
-
-.services {
-    text-align: left;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.services h3 {
-    margin-top: 0;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-
-.services ul li {
-    margin: 10px 0;
-}
-
-.services ul li strong {
-    display: block;
-}
-
 .btn {
     display: inline-block;
     margin: 10px;
