@@ -1,0 +1,4 @@
+# Redirect old URLs to new URLs
+Redirect 301 /index.html /home
+Redirect 301 /menu.html /menu
+Redirect 301 /contact.html /contact
