@@ -1,38 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset and base styles */
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background: #333;
+    color: #fff;
     padding: 1em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
 nav .logo {
-    width: 100px; /* Adjust the size of your logo as needed */
-    margin-right: 20px;
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
-    gap: 15px;
 }
 
 nav ul li {
-    margin: 0;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -41,23 +48,38 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Hero Section */
+
 .hero {
-    background: url('images/hero-image.jpg') no-repeat center center/cover;
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
-    text-align: center;
+    padding: 0 1em;
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 2em;
     border-radius: 10px;
+    max-width: 600px; /* Restrict maximum width */
+    width: 100%;
+    text-align: center;
 }
 
-.hero-content .btn {
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -67,67 +89,84 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.hero-content .btn:hover {
+.btn:hover {
     background-color: #c0392b;
 }
 
-.gallery {
+/* Welcome Section */
+
+.welcome {
+    padding: 2em;
+    background-color: #fff;
+    color: #333;
     text-align: center;
-    padding: 2em 0;
+}
+
+.welcome h2 {
+    margin-top: 0;
+}
+
+.welcome p {
+    margin: 20px 0;
+}
+
+.services {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.services h3 {
+    margin-top: 0;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
+}
+
+.services ul li strong {
+    display: block;
+}
+
+/* Gallery Section */
+
+.gallery {
+    padding: 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-top: 0;
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery-grid img {
-    width: 100%;
-    border-radius: 10px;
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
-.menu {
-    padding: 2em;
-}
-
-.menu-category {
-    margin-bottom: 2em;
-}
-
-.contact {
-    padding: 2em;
-    text-align: center;
-}
-
-.contact-info a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.contact-info img {
-    width: 40px;
-}
-
-.complain-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.complain-btn:hover {
-    background-color: #1da851;
-}
+/* Footer Section */
 
 footer {
     text-align: center;
     padding: 1em 0;
     background-color: #333;
     color: #fff;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
 }
