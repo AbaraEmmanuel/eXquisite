@@ -102,35 +102,34 @@ nav ul li a {
     text-align: center;
 }
 
-.welcome h2 {
-    margin-top: 0;
-}
-
-.welcome p {
-    margin: 20px 0;
-}
-
-.services {
-    text-align: left;
-    margin: 0 auto;
+.welcome-content {
     max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.services h3 {
+.welcome-content h2 {
     margin-top: 0;
+    font-size: 2em;
 }
 
-.services ul {
+.welcome-content p {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.welcome-content ul {
     list-style: none;
     padding: 0;
 }
 
-.services ul li {
+.welcome-content ul li {
     margin: 10px 0;
 }
 
-.services ul li strong {
+.welcome-content ul li strong {
     display: block;
+    font-weight: bold;
 }
 
 /* Gallery Section */
