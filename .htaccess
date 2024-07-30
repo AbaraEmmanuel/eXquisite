@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^home$ /index.html [L]
+RewriteRule ^menu$ /menu.html [L]
+RewriteRule ^contact$ /contact.html [L]
